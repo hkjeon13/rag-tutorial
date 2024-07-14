@@ -9,8 +9,11 @@ RAG 모델은 두 가지 구성요소로 이루어져 있습니다.
 1. **Retriever**: 대규모의 문서를 효율적으로 검색/추출하는 역할을 합니다. 주로 검색 엔진이나 BM25와 같은 전통적인 정보 검색 기법을 사용합니다.
 2. **Generator**: 검색된 문서를 바탕으로 질의에 대한 답변을 생성하는 역할을 합니다. 주로 GPT와 같은 언어 생성 모델을 사용합니다.
 
+
 ## PDF 자료
-- [01_프로젝트 개요](https://www.slideshare.net/slideshow/rag-tutorial-01-rag-pdf/270232354)
+- [01. 프로젝트 개요](https://www.slideshare.net/slideshow/rag-tutorial-01-rag-pdf/270232354)
+- [02. RAG 프로젝트 파이프라인](https://www.slideshare.net/slideshow/rag-tutorial-01-rag-pdf-ca02/270232555)
+
 
 ## 참고 사항
 - 본 레퍼지토리는 추후 지속적으로 업데이트될 예정입니다. 따라서 아직 완성되지 않은 부분이 있을 수 있습니다.
