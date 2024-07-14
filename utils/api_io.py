@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from typing import List, Dict, Any
+
+from pydantic import BaseModel
 
 
 class Identification(BaseModel):
@@ -28,13 +29,14 @@ class IndexingOutput(Identification):
 class RetrievalItem(Identification):
     query: str
     max_query_size: int = 1024
+    top_k: int = 3
 
 
 class RetrievalOutput(Identification):
     related_documents: List[Document] = []
 
 
-class Utterance(Identification):
+class Utterance(BaseModel):
     role: str
     content: str
 
@@ -43,5 +45,6 @@ class ChatItem(Identification):
     messages: List[Utterance] = []
     max_query_size: int = 1024
     max_response_size: int = 4096
-
+    top_k: int = 3
+    stream: bool = False
 # ChatOutput is not defined here, but it is defined in the API server code directly.
